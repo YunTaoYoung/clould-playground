@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(mvn clean:*)",
+      "Bash(echo:*)",
+      "Bash(pkill:*)",
+      "Bash(npm create vite@latest frontend -- --template react-ts)",
+      "Bash(npm install)",
+      "Bash(npm install antd @ant-design/icons axios zustand @tanstack/react-query react-router-dom @monaco-editor/react)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

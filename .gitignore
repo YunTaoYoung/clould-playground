@@ -1,0 +1,149 @@
+# Cloud Playground - Git Ignore File
+
+# ======================
+# Java / Maven / Spring Boot
+# ======================
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.ear
+backend/*.class
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# ======================
+# Node.js / npm / React
+# ======================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.pnp
+frontend/.pnp.js
+
+# Testing
+frontend/coverage/
+
+# Production
+frontend/build/
+
+# Logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# ======================
+# IDE / Editors
+# ======================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ======================
+# Operating System
+# ======================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ======================
+# Application Specific
+# ======================
+
+# H2 Database files
+data/
+*.mv.db
+*.trace.db
+
+# Log files
+*.log
+logs/
+backend/*.log
+backend/app*.log
+
+# Environment variables (if containing sensitive data)
+# Uncomment if you don't want to commit .env files
+# .env
+# .env.local
+# .env.*.local
+
+# Spring Boot
+backend/spring-boot-devtools.properties
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ======================
+# Build outputs
+# ======================
+dist/
+build/
+target/
+
+# ======================
+# Package managers
+# ======================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ======================
+# Kubernetes
+# ======================
+# Keep kubeconfig out of version control
+.kube/
+kubeconfig
+
+# ======================
+# Misc
+# ======================
+*.pid
+*.seed
+*.pid.lock
+.npm
+.eslintcache
+.yarn-integrity
