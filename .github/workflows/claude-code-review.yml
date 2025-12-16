@@ -36,10 +36,12 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          anthropic_base_url: https://api.kimi.com/coding/
-          claude_env: |
-            API_BASE_URL: https://api.kimi.com/coding/
-            ANTHROPIC_BASE_URL: https://api.kimi.com/coding/
+          settings: |
+            {
+              "env": {
+                "ANTHROPIC_BASE_URL": "https://api.kimi.com/coding/"
+              }
+            }
           prompt: |
             REPO: ${{ github.repository }}
             PR NUMBER: ${{ github.event.pull_request.number }}
