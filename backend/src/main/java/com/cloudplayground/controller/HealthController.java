@@ -26,7 +26,7 @@ public class HealthController {
     private String kubernetesNamespace;
 
     /**
-     * Simple health check endpoint
+     * Simple health check endpoint, 随便加点comment测试下claude code github action
      */
     @GetMapping
     public ResponseEntity<Map<String, Object>> healthCheck() {
